@@ -1,0 +1,28 @@
+{
+  "name": "myblog",
+  "version": "0.0.0",
+  "description": "Blog personal",
+  "main": "src/index.js",
+  "scripts": {
+    "deploy": "gh-pages -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KrlozMedina/myBlog.git"
+  },
+  "keywords": [
+    "async",
+    "promise",
+    "API",
+    "Landi"
+  ],
+  "author": "KrlozMedina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KrlozMedina/myBlog/issues"
+  },
+  "homepage": "https://github.com/KrlozMedina/myBlog#readme",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
