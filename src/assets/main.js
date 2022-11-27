@@ -1,4 +1,4 @@
-const API = 'https://youtube-v31.p.rapidapi.com/search?channelId=UCwr2Oy0BSvLWbukMAi_Nk7g&part=snippet%2Cid&order=date&maxResults=9';
+const API = 'https://youtube-v31.p.rapidapi.com/search?channelId=UCwr2Oy0BSvLWbukMAi_Nk7g&part=snippet%2Cid&order=date&maxResults=4';
 
 const content = null || document.getElementById('content')
 
@@ -29,8 +29,10 @@ async function fetchData(urlAPI) {
                     </div>
                     <div class="mt-4 flex justify-between">
                         <h3 class="text-sm text-gray-700">
-                            <span aria-hidden="true" class="absolute inset-0"></span>
-                            ${video.snippet.title}
+                            <a href="https://www.youtube.com/watch?v=${video.id.videoId}">
+                                <span aria-hidden="true" class="absolute inset-0"></span>
+                            </a>
+                        ${video.snippet.title}
                         </h3>
                     </div>
                 </div>
